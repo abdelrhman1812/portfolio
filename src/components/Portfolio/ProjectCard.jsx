@@ -94,12 +94,21 @@ const ProjectCard = ({
         <h3>{title}</h3>
 
         <p className="position-relative">
-          <span>{description}</span>
-          <FaEye
+          <span>
+            {description.split(" ").splice(0, 15).join(" ")}
+            <br />
+            {" see more ... "}
+            <FaEye
+              size={20}
+              onClick={() => toggleDescription(title)}
+              className=" cursor-pointer"
+            />
+          </span>
+          {/* <FaEye
             size={20}
             onClick={() => toggleDescription(title)}
             className="d-block icon-open position-absolute cursor-pointer"
-          />
+          /> */}
         </p>
 
         <p

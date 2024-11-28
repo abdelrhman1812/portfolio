@@ -2,23 +2,7 @@
 
 header {
   padding: 100px 0;
-  background: var(--background-color);
-}
-
-.hero-bg-gradient {
-  position: absolute;
-  top: -50%;
-  left: -25%;
-  width: 150%;
-  height: 200%;
-  background: radial-gradient(
-    circle at center,
-    rgba(100, 108, 255, 0.15) 0%,
-    rgba(144, 137, 252, 0.1) 25%,
-    rgba(26, 26, 26, 0) 70%
-  );
-  transform: rotate(-12deg);
-  pointer-events: none;
+  background: var(--secondary-background);
 }
 
 .profession {
@@ -67,7 +51,6 @@ header {
 
 .image-wrapper {
   border-radius: 30px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   transform-style: preserve-3d;
 }
 

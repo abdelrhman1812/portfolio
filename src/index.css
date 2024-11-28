@@ -7,8 +7,7 @@
   --background-color: #1a1a1a;
   --bg-card: rgba(255, 255, 255, 0.03);
   --bg-gradient-shadow: 0 4px 15px rgba(100, 108, 255, 0.3);
-  color-scheme: light dark;
-
+  --secondary-background: #00000017;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

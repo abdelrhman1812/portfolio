@@ -2,11 +2,11 @@
   padding: 8rem 0;
   position: relative;
   overflow: hidden;
-  background: #1a1a1a;
+  background: var(--secondary-background);
   min-height: 100vh;
 }
 
-.portfolio-bg-gradient {
+/* .portfolio-bg-gradient {
   position: absolute;
   top: -50%;
   left: -25%;
@@ -20,7 +20,7 @@
   );
   transform: rotate(-5deg);
   pointer-events: none;
-}
+} */
 
 .portfolio-title {
   font-size: 3.5rem;
@@ -135,14 +135,18 @@
   line-height: 1.6;
   padding-bottom: 10px;
 
-  display: -webkit-box;
+  /* display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
   transition: all 0.3s ease;
 }
 
-.icon-open {
+p svg {
+  fill: #646cff;
+  cursor: pointer;
+}
+/* .icon-open {
   cursor: pointer;
   transform: translateY(2px);
   transform: translateX(-5px);
@@ -151,7 +155,7 @@
   right: -23px;
   top: 30px;
   fill: #646cff;
-}
+} */
 
 .full-description {
   padding: 10px;
