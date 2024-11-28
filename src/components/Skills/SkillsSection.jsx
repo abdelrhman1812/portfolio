@@ -1,23 +1,26 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
+import Bootstrap from "../../assets/Images/skills/bootstrap.png";
+import CSS from "../../assets/Images/skills/css.1b9dcc2e.svg";
+import HTML from "../../assets/Images/skills/html5.a7362949.svg";
+import JS from "../../assets/Images/skills/javascript.455da02c.svg";
+import Tailwind from "../../assets/Images/skills/tailwind-css.svg";
 import SkillCard from "./SkillCard";
 import "./SkillsSection.css";
-import {
-  Bootstrap,
-  CSS,
-  Express,
-  Git,
-  HTML,
-  JS,
-  // MongoDB,
-  MySQL,
-  Next,
-  Nodejs,
-  React,
-  Sequelize,
-  Tailwind,
-} from "./index";
+
+import Next from "../../assets/Images/skills/nextjs.svg";
+import React from "../../assets/Images/skills/react.svg";
+
+import Express from "../../assets/Images/skills/express-original.svg";
+import Nodejs from "../../assets/Images/skills/nodejs.svg";
+
+// import MongoDB from "../../assets/images/skills/Mongo.svg";
+// import Sequelize from "../../assets/images/skills/sequelize.svg";
+import MySQL from "../../assets/images/skills/SQL.png";
+
+import Git from "../../assets/images/skills/git.svg";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const skills = [
@@ -31,7 +34,7 @@ const skills = [
   { name: "Node.js", icon: Nodejs },
   { name: "Express.js", icon: Express },
   // { name: "MongoDB", icon: MongoDB },
-  { name: "Sequelize", icon: Sequelize },
+  // { name: "Sequelize", icon: Sequelize },
   { name: "MySQL", icon: MySQL },
   { name: "Git", icon: Git },
 ];
