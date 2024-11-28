@@ -10,7 +10,7 @@ import React from "../../assets/Images/skills/react.svg";
 import Express from "../../assets/Images/skills/express-original.svg";
 import Nodejs from "../../assets/Images/skills/nodejs.svg";
 
-import MongoDB from "../../assets/images/skills/Mongo.svg";
+// import MongoDB from "../../assets/images/skills/Mongo.svg";
 import Sequelize from "../../assets/images/skills/sequelize.svg";
 import MySQL from "../../assets/images/skills/SQL.png";
 
@@ -23,7 +23,7 @@ export {
   Git,
   HTML,
   JS,
-  MongoDB,
+  // MongoDB,
   MySQL,
   Next,
   Nodejs,
