@@ -1,0 +1,144 @@
+/*  Header  */
+
+header {
+  padding: 100px 0;
+  background: var(--background-color);
+}
+
+.hero-bg-gradient {
+  position: absolute;
+  top: -50%;
+  left: -25%;
+  width: 150%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(100, 108, 255, 0.15) 0%,
+    rgba(144, 137, 252, 0.1) 25%,
+    rgba(26, 26, 26, 0) 70%
+  );
+  transform: rotate(-12deg);
+  pointer-events: none;
+}
+
+.profession {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-white-87);
+}
+
+.typing {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-white);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: var(--text-white-70);
+  max-width: 600px;
+}
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #646cff, #9089fc);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cv-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(100, 108, 255, 0.4);
+  color: #fff;
+}
+
+.image-wrapper {
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform-style: preserve-3d;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(100, 108, 255, 0.2),
+    rgba(144, 137, 252, 0.2)
+  );
+  z-index: 1;
+}
+
+.image-wrapper img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1);
+}
+
+/*  Social Icons    */
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--primary-color);
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+  background: var(--bg-gradient);
+  color: white;
+  box-shadow: 0 5px 15px rgba(100, 108, 255, 0.4);
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    margin-top: 3rem;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .profession {
+    font-size: 1.2rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}

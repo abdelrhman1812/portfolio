@@ -1,0 +1,68 @@
+.about-section {
+  padding: 8rem 0;
+  background: var(--background-color);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  color: var(--text-white-70);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.personal-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-item {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-5px);
+}
+
+.info-label {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-right: 0;
+}
+
+.info-value {
+  color: var(--text-white-70);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .about-section {
+    padding: 4rem 0;
+  }
+}
