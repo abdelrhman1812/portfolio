@@ -109,8 +109,11 @@
 
 @media (max-width: 768px) {
   .contact-container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info {
+    padding: 30px 3px;
   }
 
   .contact-section {
