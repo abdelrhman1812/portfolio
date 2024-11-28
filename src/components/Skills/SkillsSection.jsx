@@ -19,7 +19,7 @@ import Nodejs from "../../assets/Images/skills/nodejs.svg";
 // import Sequelize from "../../assets/images/skills/sequelize.svg";
 // import MySQL from "../../assets/images/skills/SQL.png";
 
-import Git from "../../assets/images/skills/git.svg";
+// import Git from "../../assets/images/skills/git.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,7 +36,7 @@ const skills = [
   // { name: "MongoDB", icon: MongoDB },
   // { name: "Sequelize", icon: Sequelize },
   // { name: "MySQL", icon: MySQL },
-  { name: "Git", icon: Git },
+  // { name: "Git", icon: Git },
 ];
 
 const SkillsSection = () => {
