@@ -17,7 +17,7 @@ import Nodejs from "../../assets/Images/skills/nodejs.svg";
 
 // import MongoDB from "../../assets/images/skills/Mongo.svg";
 // import Sequelize from "../../assets/images/skills/sequelize.svg";
-import MySQL from "../../assets/images/skills/SQL.png";
+// import MySQL from "../../assets/images/skills/SQL.png";
 
 import Git from "../../assets/images/skills/git.svg";
 
@@ -35,7 +35,7 @@ const skills = [
   { name: "Express.js", icon: Express },
   // { name: "MongoDB", icon: MongoDB },
   // { name: "Sequelize", icon: Sequelize },
-  { name: "MySQL", icon: MySQL },
+  // { name: "MySQL", icon: MySQL },
   { name: "Git", icon: Git },
 ];
 
