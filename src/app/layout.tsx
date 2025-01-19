@@ -19,10 +19,7 @@ export const metadata: Metadata = {
     "Portfolio",
     "Web Development",
   ],
-  robots: {
-    index: true,
-    follow: true,
-  },
+
   authors: [{ name: "Abdelrhman Ali" }],
   creator: "Abdelrhman Ali",
   publisher: "Abdelrhman Ali",
