@@ -1,6 +1,6 @@
+"use client";
 import { sendEmail } from "@/utils/sendEmail";
 import { useFormik } from "formik";
-import { motion } from "framer-motion";
 import { useMemo, useRef, useState } from "react";
 import { TbLoader } from "react-icons/tb";
 import * as Yup from "yup";
@@ -51,22 +51,8 @@ const FormContactUs = () => {
   });
 
   return (
-    <motion.form
-      ref={formRef}
-      className="space-y-6"
-      onSubmit={formik.handleSubmit}
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-    >
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="space-y-2"
-      >
+    <form ref={formRef} className="space-y-6" onSubmit={formik.handleSubmit}>
+      <div className="space-y-2">
         <input
           type="text"
           name="name"
@@ -79,15 +65,9 @@ const FormContactUs = () => {
         {formik.touched.name && formik.errors.name && (
           <p className="text-red-500 my-2">{formik.errors.name}</p>
         )}
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className="space-y-2"
-      >
+      <div className="space-y-2">
         <input
           type="email"
           name="email"
@@ -100,15 +80,9 @@ const FormContactUs = () => {
         {formik.touched.email && formik.errors.email && (
           <p className="text-red-500 my-2">{formik.errors.email}</p>
         )}
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.6 }}
-        className="space-y-2"
-      >
+      <div className="space-y-2">
         <textarea
           name="message"
           value={formik.values.message}
@@ -121,7 +95,7 @@ const FormContactUs = () => {
         {formik.touched.message && formik.errors.message && (
           <p className="text-red-500 my-2">{formik.errors.message}</p>
         )}
-      </motion.div>
+      </div>
 
       <button
         type="submit"
@@ -131,7 +105,7 @@ const FormContactUs = () => {
       >
         {IsLoading ? <TbLoader size={30} /> : "Send Message"}
       </button>
-    </motion.form>
+    </form>
   );
 };
 

@@ -1,5 +1,3 @@
-"use client";
-
 import HeroImage from "./HeroImage";
 import HeroText from "./HeroText";
 import SocialLinks from "./SocialLinks";

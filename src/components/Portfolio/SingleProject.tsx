@@ -1,17 +1,9 @@
 import { ProjectType } from "@/types/types";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const SingleProject = ({ project }: { project: ProjectType }) => {
   return (
-    <motion.div
-      layout
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 20 }}
-      transition={{ duration: 0.5 }}
-      className="bg-card rounded-lg overflow-hidden shadow-md"
-    >
+    <div className="bg-card rounded-lg overflow-hidden shadow-md">
       <Image
         src={project.image || "/placeholder.svg"}
         alt={project.title}
@@ -46,7 +38,7 @@ const SingleProject = ({ project }: { project: ProjectType }) => {
           </a>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

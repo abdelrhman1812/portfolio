@@ -1,7 +1,6 @@
 "use client";
 
 import projects from "@/data/mock-projects";
-import { motion } from "framer-motion";
 import { useState } from "react";
 import ProjectFilter from "./ProjectFilter";
 import SingleProject from "./SingleProject";
@@ -18,14 +17,9 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="bg-background-alt py-20">
       <div className="container px-4 sm:px-6 lg:px-8">
-        <motion.h2
-          className="text-3xl font-bold text-center text-foreground mb-12"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <h2 className="text-3xl font-bold text-center text-foreground mb-12">
           <span className="text-primary"> My </span> Portfolio
-        </motion.h2>
+        </h2>
 
         {/* Filter Section */}
         <ProjectFilter onFilterChange={setSelectedFilter} />

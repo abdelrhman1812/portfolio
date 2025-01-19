@@ -1,5 +1,4 @@
 import timelineData from "@/data/mock-timeline";
-import { motion } from "framer-motion";
 
 const SingleTimeLine = ({ type }: { type: "education" | "experience" }) => {
   const title = type === "education" ? "Education" : "Experience";
@@ -12,14 +11,7 @@ const SingleTimeLine = ({ type }: { type: "education" | "experience" }) => {
         <div className="absolute left-2.5 top-3 h-full w-0.5 bg-primary/20"></div>
 
         {timelineData?.[type].map((item, id) => (
-          <motion.div
-            key={id}
-            initial={{ opacity: 0, x: type === "education" ? -50 : 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: id * 0.2, duration: 0.6 }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="relative mb-12 pl-8"
-          >
+          <div key={id} className="relative mb-12 pl-8">
             {/* Timeline dot */}
             <div className="absolute left-0 top-3 w-5 h-5 rounded-full bg-foreground border-2 border-primary"></div>
 
@@ -35,7 +27,7 @@ const SingleTimeLine = ({ type }: { type: "education" | "experience" }) => {
               </span>
               <p className="text-gray-400">{item.description}</p>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>
