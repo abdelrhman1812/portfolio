@@ -20,7 +20,7 @@ const SocialLinks = () => {
 
       <a
         href={
-          "https://drive.google.com/file/d/17ZF9PBpTHYSMZrpPgKA4ikjlHXfACtNe/view?usp=sharing"
+          "https://drive.google.com/file/d/1NiEqZroz0fTdcjXrnVC5CGLTWEQMVZvv/view?usp=sharing"
         }
         target="_blank"
         rel="noopener noreferrer"

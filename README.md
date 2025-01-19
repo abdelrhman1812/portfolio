@@ -7,4 +7,4 @@ technologies like HTML5, CSS3, Bootstrap, TailwindCSS, JavaScript,
 TypeScript, **ReactJs**, **Nextjs** with a number of web designs deployed on
 GitHub.
 
-![Home Page](public/Image/Abdelrhman.png)
+![Home Page](public/Abdelrhman.png)
