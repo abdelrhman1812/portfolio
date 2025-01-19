@@ -1,5 +1,6 @@
 import navItems from "@/data/mock-navigation";
-import { Link } from "react-scroll";
+import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 const DesktopNavigation = () => {
   return (
@@ -10,19 +11,25 @@ const DesktopNavigation = () => {
           {navItems.map((item) => (
             <Link
               key={item.name}
-              to={item.href}
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-80}
-              className="cursor-pointer relative px-3 py-2 rounded-md text-sm font-medium transition-colors text-muted-foreground hover:text-primary hover:bg-card"
-              activeClass="bg-primary  text-white font-bold rounded-md"
+              href={`/#${item.href}`}
+              passHref
+              legacyBehavior
             >
-              {item.name}
+              <ScrollLink
+                to={item.href}
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+                className="cursor-pointer relative px-3 py-2 rounded-md text-sm font-medium transition-colors text-muted-foreground hover:text-primary hover:bg-card"
+                activeClass="bg-primary text-white font-bold rounded-md"
+              >
+                {item.name}
+              </ScrollLink>
             </Link>
           ))}
         </div>
-      </div>{" "}
+      </div>
     </>
   );
 };

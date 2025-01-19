@@ -1,8 +1,8 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import { useState } from "react";
-import { Link } from "react-scroll";
 import DesktopNavigation from "./DesktopNavigation";
 import Menu from "./Menu";
 import NavMobile from "./NavMobile";
@@ -19,11 +19,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <Link
-              to="home"
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-70}
+              href="/#home"
               className="text-xl font-bold text-primary cursor-pointer"
             >
               Portfolio
