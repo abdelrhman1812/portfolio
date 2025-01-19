@@ -1,6 +1,7 @@
 import navItems from "@/data/mock-navigation";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 const NavMobile = ({ toggle }: { toggle: boolean }) => {
   return (
@@ -24,16 +25,18 @@ const NavMobile = ({ toggle }: { toggle: boolean }) => {
                 delay: index * 0.1,
               }}
             >
-              <Link
-                to={item.href}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-70}
-                className="block cursor-pointer w-full px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-primary hover:bg-muted"
-                activeClass="text-primary font-bold"
-              >
-                {item.name}
+              <Link href={`/#${item.href}`} passHref legacyBehavior>
+                <ScrollLink
+                  to={item.href}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-70}
+                  className="block cursor-pointer w-full px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-primary hover:bg-muted"
+                  activeClass="text-primary font-bold"
+                >
+                  {item.name}
+                </ScrollLink>
               </Link>
             </motion.div>
           ))}

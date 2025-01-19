@@ -52,11 +52,7 @@ export const metadata: Metadata = {
     images: ["https://x.com/Ody_Ody_1999/photo"],
     creator: "@@Ody_Ody_1999",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+
   verification: {
     other: {
       me: ["abdelrhmanali1812@gmail.com"],
