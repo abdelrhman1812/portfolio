@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     "Portfolio",
     "Web Development",
   ],
+  robots: {
+    index: true,
+    follow: true,
+  },
   authors: [{ name: "Abdelrhman Ali" }],
   creator: "Abdelrhman Ali",
   publisher: "Abdelrhman Ali",
@@ -50,7 +54,7 @@ export const metadata: Metadata = {
     description:
       "Explore my full-stack development projects on my personal portfolio.",
     images: ["https://x.com/Ody_Ody_1999/photo"],
-    creator: "@@Ody_Ody_1999",
+    creator: "@Ody_Ody_1999",
   },
 
   verification: {
