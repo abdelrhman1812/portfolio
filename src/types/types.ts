@@ -55,7 +55,8 @@ export interface TimelineType {
   title: string;
   institution: string;
   date: string;
-  description: string;
+  description: string[];
+  certificationImage?: string;
 }
 
 /* Skills Type */

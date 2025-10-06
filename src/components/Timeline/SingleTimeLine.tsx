@@ -1,4 +1,6 @@
 import timelineData from "@/data/mock-timeline";
+import ShowCertificationImage from "./ShowCertificationImage";
+import WorkDescription from "./WorkDescription";
 
 const SingleTimeLine = ({ type }: { type: "education" | "experience" }) => {
   const title = type === "education" ? "Education" : "Experience";
@@ -19,13 +21,19 @@ const SingleTimeLine = ({ type }: { type: "education" | "experience" }) => {
               <h4 className="text-light text-lg font-semibold mb-2">
                 {item.title}
               </h4>
-              <h5 className="text-white font-medium mb-2">
-                {item.institution}
+              <h5 className="text-primary font-medium mb-5">
+                @ {item.institution}{" "}
+                {item.certificationImage && (
+                  <ShowCertificationImage
+                    certificationImage={item.certificationImage}
+                  />
+                )}
               </h5>
               <span className="inline-block bg-background text-primary text-sm shadow px-3 py-1 rounded-full mb-3">
                 {item.date}
               </span>
-              <p className="text-gray-400">{item.description}</p>
+
+              <WorkDescription description={item.description} />
             </div>
           </div>
         ))}

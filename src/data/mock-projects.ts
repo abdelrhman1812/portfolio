@@ -7,12 +7,9 @@ import HTML from "../../public/assets/Images/skills/html5.a7362949.svg";
 import JS from "../../public/assets/Images/skills/javascript.455da02c.svg";
 import JQ from "../../public/assets/Images/skills/jquery.svg";
 import mongodb from "../../public/assets/Images/skills/Mongo.svg";
-import Next from "../../public/assets/Images/skills/nextjs.svg";
 import Nodejs from "../../public/assets/Images/skills/nodejs.svg";
 import react from "../../public/assets/Images/skills/react.svg";
 import SASS from "../../public/assets/Images/skills/sass.svg";
-import Sequelize from "../../public/assets/Images/skills/sequelize.svg";
-import Tailwind from "../../public/assets/Images/skills/tailwind-css.svg";
 
 /* Image */
 import E_commerce from "../../public/assets/Images/project-image/E-commerce/Home.png";
@@ -21,7 +18,8 @@ import Electronic_Store from "../../public/assets/Images/project-image/Electroni
 import GameApp from "../../public/assets/Images/project-image/Games App/Games.png";
 import food from "../../public/assets/Images/project-image/Yummy/Home.png";
 
-import socialApp from "../../public/assets/Images/project-image/Blog/Blog.png";
+// import socialApp from "../../public/assets/Images/project-image/Blog/Blog.png";
+import moltqaApp from "../../public/assets/Images/project-image/Blog/Moltaqa.png";
 import courses from "../../public/assets/Images/project-image/courses platform/courses platform.png";
 import forOurChildren from "../../public/assets/Images/project-image/For Our/header.png";
 
@@ -66,7 +64,7 @@ const projects: ProjectType[] = [
     description:
       "Online Shop, built with React.js, is my first e-commerce project featuring user authentication, secure payments online, dynamic cart and favorites management, dark mode, and seamless navigation through product categories.",
     type: ["React"],
-    isLatest: true,
+    isLatest: false,
   },
   {
     id: "3",
@@ -93,16 +91,30 @@ const projects: ProjectType[] = [
   },
   {
     id: "21",
-    title: "Dental Care",
-    image: "/assets/Images/project-image/Freelance/2 (1).png",
-    liveUrl: "https://ayacare-abdelrhman1812s-projects.vercel.app/",
+    title: "Unique Tech",
+    image: "/assets/Images/project-image/Freelance/2 (2).png",
+    liveUrl: "https://unique-tech-six.vercel.app/",
     githubUrl: "https://github.com/abdelrhman1812",
     technologies: ["Next.js"],
     description:
-      "Experience the Difference in Dental Care We are a medical facility specialized in providing dental care services, such as teeth cleaning, fillings, gum treatment, and extractions. The clinic is managed by specialized dentists and utilizes the latest technologies to ensure precise and safe treatment.",
+      "Unique tech is where your imagination and our expertise converge to create design solutions that elevate your brand and set you apart from the competition.",
     type: ["Next Js"],
     isLatest: true,
   },
+
+  {
+    id: "24",
+    title: "Moltqa App",
+    image: moltqaApp,
+    liveUrl: "https://blog-app-iti.vercel.app",
+    githubUrl: "https://github.com/abdelrhman1812/blog_app_iti",
+    technologies: [react, Nodejs, Express, mongodb],
+    description:
+      "Blog App is a social media platform where users can post, comment, like, and follow other users. It features a secure login system and personalized user experience, with dark mode support and optimized UI interactions.",
+    type: ["Fullstack", "React"],
+    isLatest: true,
+  },
+
   {
     id: "22",
     title: "Business Website with Dual-Language Support",
@@ -116,14 +128,14 @@ const projects: ProjectType[] = [
     isLatest: true,
   },
   {
-    id: "23",
-    title: "Unique Tech",
-    image: "/assets/Images/project-image/Freelance/2 (2).png",
-    liveUrl: "https://unique-tech-six.vercel.app/",
+    id: "21",
+    title: "Dental Care",
+    image: "/assets/Images/project-image/Freelance/2 (1).png",
+    liveUrl: "https://ayacare-abdelrhman1812s-projects.vercel.app/",
     githubUrl: "https://github.com/abdelrhman1812",
     technologies: ["Next.js"],
     description:
-      "Unique tech is where your imagination and our expertise converge to create design solutions that elevate your brand and set you apart from the competition.",
+      "Experience the Difference in Dental Care We are a medical facility specialized in providing dental care services, such as teeth cleaning, fillings, gum treatment, and extractions. The clinic is managed by specialized dentists and utilizes the latest technologies to ensure precise and safe treatment.",
     type: ["Next Js"],
     isLatest: true,
   },
@@ -151,17 +163,7 @@ const projects: ProjectType[] = [
     type: ["React", "latest"],
     isLatest: true,
   },
-  {
-    id: "6",
-    title: `Social App`,
-    image: socialApp,
-    liveUrl: "https://facebook-murex-sigma.vercel.app/",
-    githubUrl: "https://github.com/abdelrhman1812/Facebook",
-    technologies: [Next, Sequelize, Tailwind, Nodejs, Express],
-    description:
-      "A Full Stack project using Node.js and Next.js for adding posts and comments, with the ability to upload images. It includes CRUD operations for posts and comments, along with user management, authentication, and image storage using Cloudinary. The project allows creating, updating, and deleting posts and comments while handling image uploads.",
-    type: ["Fullstack", "Next", "latest"],
-  },
+
   {
     id: "7",
     title: `Courses Platform`,

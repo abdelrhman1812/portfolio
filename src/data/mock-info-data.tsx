@@ -10,7 +10,7 @@ const infoData: InfoDataType[] = [
   {
     icon: <FaRegCalendarAlt className="text-6xl text-primary mb-4" />,
     title: "Date of Birth",
-    detail: "19 - 01 - 2000",
+    detail: "18 - 12 - 1999",
   },
   {
     icon: <FaGlobe className="text-6xl text-primary mb-4" />,
