@@ -5,8 +5,9 @@ const filters = [
   { id: "Fullstack", label: "Fullstack" },
   { id: "React", label: "React" },
   { id: "Next Js", label: "Next Js" },
-  { id: "Node.js", label: "Node.js" },
   { id: "HTML, CSS, Bootstrap, JS", label: "HTML & CSS" },
+  { id: "freelance", label: "Freelance" },
+  // { id: "Node.js", label: "Node.js" },
 ];
 
 interface ProjectFilterProps {
