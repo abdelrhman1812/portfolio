@@ -80,14 +80,26 @@ const projects: ProjectType[] = [
   },
   {
     id: "20",
-    title: "Business Website with Dual-Language Support",
-    image: "/assets/Images/project-image/Kayanlabs/company2 (2).png",
-    liveUrl: "https://company-website-1.vercel.app/en",
-    githubUrl: "https://github.com/abdelrhman1812",
+    title: "Business Website Dual-Language ",
+    image: "/assets/Images/project-image/Kayanlabs/smart_tech.png",
+    liveUrl: "https://company-protfolio.vercel.app",
+    githubUrl: "https://github.com/abdelrhman1812/company_protfolio_service",
     technologies: ["Next.js"],
     description:
       "A business-oriented website that supports English and Arabic languages, showcasing a sleek, modern interface suitable for companies and startups.",
     type: ["Next Js"],
+    isLatest: true,
+  },
+
+      {
+    id: "22",
+    title: "logistics website Dual-Language ",
+    image: "/assets/Images/project-image/Kayanlabs/company2 (1).png",
+    liveUrl: "https://company-website-2-blue.vercel.app/en/",
+    githubUrl: "https://github.com/abdelrhman1812",
+    technologies: ["Next.js"],
+    description:
+"A bilingual, business-oriented logistics website (English and Arabic) offering a sleek, modern interface designed for companies in the cargo and transportation sector",    type: ["Next Js"],
     isLatest: true,
   },
   {
@@ -115,6 +127,7 @@ const projects: ProjectType[] = [
     isLatest: true,
 
   },
+
   {
     id: "24",
     title: "Moltqa App",
@@ -128,18 +141,7 @@ const projects: ProjectType[] = [
     isLatest: true,
   },
 
-  {
-    id: "22",
-    title: "Business Website with Dual-Language Support",
-    image: "/assets/Images/project-image/Kayanlabs/company2 (1).png",
-    liveUrl: "https://company-website-2-blue.vercel.app/en/",
-    githubUrl: "https://github.com/abdelrhman1812",
-    technologies: ["Next.js"],
-    description:
-      "A business-oriented website that supports English and Arabic languages, showcasing a sleek, modern interface suitable for companies and startups.",
-    type: ["Next Js"],
-    isLatest: true,
-  },
+
   {
     id: "21",
     title: "Dental Care",
