@@ -28,14 +28,16 @@ const SingleProject = ({ project }: { project: ProjectType }) => {
           >
             Live Demo
           </a>
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-card text-primary shadow-lg px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
-          >
-            GitHub
-          </a>
+          {project.showGithub !== false && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-card text-primary shadow-lg px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
+            >
+              GitHub
+            </a>
+          )}
         </div>
       </div>
     </div>

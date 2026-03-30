@@ -38,10 +38,25 @@ const timelineData: {
     {
       id: 1,
       title: "Frontend Developer",
+      institution: "TAS IT , Maadi ,Egypt",
+      date: "Oct 2025 - Present",
+      description: [
+        "Developed dynamic and responsive web pages and systems , focus on performance optimization, including lazy loading and code splitting using React Suspense.",
+        "Optimized API data flow and collaborated with backend developers to improve efficiency and responsiveness.",
+        "Built and managed complex dynamic forms with multi-step/tab-based workflows.",
+        "Developed reusable UI components (buttons, inputs, modals) as part of a scalable Design System.",
+        "Managed application state using Redux & React Query and implemented real-time features chat, notifications.",
+        "Responsible for frontend architecture and component design, while collaborating with backend developers to define requirements and optimize API design.",
+        "Wrote clean, maintainable code, reduced bugs through extensive testing, and coordinated tasks using Jira",
+      ],
+    },
+    {
+      id: 2,
+      title: "Frontend Developer",
       institution: "Wareef Real Estate, Riyadh, Saudi Arabia",
       date: "Jun 2025 - Sep 2025 (3-Month Contract)",
       description: [
-        "Designed and launched a responsive dashboard for managing users, properties, chats, and notifications, significantly enhancing the overall user experience.",
+        "Developed a responsive dashboard for managing users, properties, chats, and notifications, significantly enhancing the overall user experience.",
         "Seamlessly integrated the dashboard with the mobile application, ensuring consistent functionality across all platforms.",
         "Utilized Tailwind CSS, Shadcn/ui, and React Query to develop a visually appealing and high-performing user interface.",
         "Implemented real-time updates and optimized API integrations, leading to improved application performance and responsiveness.",
@@ -49,7 +64,7 @@ const timelineData: {
     },
 
     {
-      id: 2,
+      id: 3,
       title: "Frontend Developer Intern",
       institution: "KayanLabs, Maadi, Cairo",
       date: "Dec 2024 - Feb 2025 (3-Month Internship)",

@@ -88,6 +88,7 @@ export interface ProjectType {
   githubUrl: string;
   type: string[];
   isLatest?: boolean;
+  showGithub?: boolean;
 }
 
 /* Form Type */

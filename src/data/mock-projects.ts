@@ -37,10 +37,10 @@ import Notes_APP from "../../public/assets/Images/project-image/Notes/Home.png";
 
 import { ProjectType } from "@/types/types";
 import english from "../../public/assets/Images/project-image/english app/english.png";
+import eyemakers from "../../public/assets/Images/project-image/eyemakers/eyemakers.png";
 import Fokir from "../../public/assets/Images/project-image/Fokir/fokir.png";
 import naturalProducts from "../../public/assets/Images/project-image/natural products/natural-products.png";
 import Saraha from "../../public/assets/Images/project-image/saraha/sarah.png";
-import eyemakers from "../../public/assets/Images/project-image/eyemakers/eyemakers.png";
 
 const projects: ProjectType[] = [
   {
@@ -91,7 +91,7 @@ const projects: ProjectType[] = [
     isLatest: true,
   },
 
-      {
+  {
     id: "22",
     title: "logistics website Dual-Language ",
     image: "/assets/Images/project-image/Kayanlabs/company2 (1).png",
@@ -99,20 +99,22 @@ const projects: ProjectType[] = [
     githubUrl: "https://github.com/abdelrhman1812",
     technologies: ["Next.js"],
     description:
-"A bilingual, business-oriented logistics website (English and Arabic) offering a sleek, modern interface designed for companies in the cargo and transportation sector",    type: ["Next Js"],
+      "A bilingual, business-oriented logistics website (English and Arabic) offering a sleek, modern interface designed for companies in the cargo and transportation sector",
+    type: ["Next Js"],
     isLatest: true,
   },
   {
     id: "21",
     title: "Unique Tech",
     image: "/assets/Images/project-image/Freelance/2 (2).png",
-    liveUrl: "https://www.uniquezone.me/",
+    liveUrl: "http://unique-clouders.vercel.app/",
     githubUrl: "https://github.com/abdelrhman1812",
     technologies: ["Next.js"],
     description:
       "Unique tech is where your imagination and our expertise converge to create design solutions that elevate your brand and set you apart from the competition.",
-    type: ["Next Js","freelance"],
+    type: ["Next Js", "freelance"],
     isLatest: true,
+    showGithub: false,
   },
 
   {
@@ -122,10 +124,11 @@ const projects: ProjectType[] = [
     liveUrl: "https://eyemakers.in/",
     githubUrl: "https://github.com/abdelrhman1812",
     technologies: [HTML, CSS, bootstrap, JS],
-    description:"General Prosthetic Center offers expert care in custom prosthetic eyes, including custom ocular prostheses, digital iris, lightweight designs, and scleral shell prostheses — helping patients restore their look and confidence.",
+    description:
+      "General Prosthetic Center offers expert care in custom prosthetic eyes, including custom ocular prostheses, digital iris, lightweight designs, and scleral shell prostheses — helping patients restore their look and confidence.",
     type: ["HTML, CSS, Bootstrap, JS", "freelance"],
     isLatest: true,
-
+    showGithub: false,
   },
 
   {
@@ -140,7 +143,6 @@ const projects: ProjectType[] = [
     type: ["Fullstack", "React"],
     isLatest: true,
   },
-
 
   {
     id: "21",
@@ -322,7 +324,6 @@ const projects: ProjectType[] = [
       "A Weather App that allows users to search for weather information by city. It provides real-time data, including temperature, humidity, and wind speed, with a responsive design for a seamless, user-friendly experience.",
     type: ["HTML, CSS, Bootstrap, JS"],
   },
-
 ];
 
 export default projects;
