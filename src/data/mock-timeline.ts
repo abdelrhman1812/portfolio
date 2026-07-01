@@ -38,25 +38,40 @@ const timelineData: {
     {
       id: 1,
       title: "Frontend Developer",
-      institution: "Wareef Real Estate, Riyadh, Saudi Arabia",
-      date: "Jun 2025 - Sep 2025 (3-Month Contract)",
+      institution: "TASK, Cairo, Maadi ",
+      date: "Nov 2025 - Present",
       description: [
-        "Designed and launched a responsive dashboard for managing users, properties, chats, and notifications, significantly enhancing the overall user experience.",
-        "Seamlessly integrated the dashboard with the mobile application, ensuring consistent functionality across all platforms.",
-        "Utilized Tailwind CSS, Shadcn/ui, and React Query to develop a visually appealing and high-performing user interface.",
-        "Implemented real-time updates and optimized API integrations, leading to improved application performance and responsiveness.",
+        "Developed dynamic and responsive web pages and systems , focus on performance optimization,including lazy loading and code splitting using React Suspense.",
+
+        "Optimized API data flow and collaborated with backend developers to improve efficiency and responsiveness.",
+        "Built and managed complex dynamic forms with multi-step/tab-based workflows.",
+        "Managed application state using Redux & React Query and implemented real-time features chat,notifications.",
+        "Architected frontend structure and component design, collaborating with backend developers to define requirements and optimize API design.",
+        "Wrote clean, maintainable code, reduced bugs through extensive testing, and coordinated tasks using Jira",
       ],
     },
 
     {
       id: 2,
+      title: "Frontend Developer",
+      institution: "Wareef Real Estate, Riyadh, Saudi Arabia",
+      date: "Jun 2025 - Sep 2025 (3-Month Contract)",
+      description: [
+        "Developed a responsive dashboard for managing users, properties, chats, and notifications, improving overall user experience.",
+        "Implemented real-time updates and optimized API integrations, enhancing application performance and responsiveness.",
+        "Built a high-performing user interface using React, Tailwind CSS, Shadcn/ui, and React Query.",
+      ],
+    },
+
+    {
+      id: 3,
       title: "Frontend Developer Intern",
       institution: "KayanLabs, Maadi, Cairo",
       date: "Dec 2024 - Feb 2025 (3-Month Internship)",
       description: [
-        "Developed responsive and user-friendly web applications leveraging React, TypeScript, and modern frameworks across diverse domains, including e-commerce and analytics dashboards.",
-        "Integrated RESTful APIs to facilitate seamless data exchange and enhance application functionality.",
-        "Implemented advanced state management techniques using React Query and Context API, improving application performance and user experience.",
+        "Developed responsive web applications using React.js, Next.js, and TypeScript across various domains, including e-commerce and dashboards.",
+        "Integrated RESTful APIs and implemented advanced state management using React Query and Context API.",
+        "Applied SEO best practices and performance optimizations to improve visibility and user experience.",
       ],
     },
 

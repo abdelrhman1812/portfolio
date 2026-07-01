@@ -20,10 +20,12 @@ const SocialLinks = () => {
 
       <a
         href={
-          "https://drive.google.com/file/d/1e8l9vXS45G1CXZlCClyyL0dnM-60YmKC/view?usp=sharing"
+          "https://drive.google.com/file/d/1eHGYpSloH8d2whkXpSQxpOtindulKi2k/view?usp=drivesdk"
         }
         target="_blank"
         rel="noopener noreferrer"
+        data-testid="download-cv"
+        download
         className="bg-primary w-48 text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-primary-dark transition-colors duration-300"
       >
         <Download size={20} />
