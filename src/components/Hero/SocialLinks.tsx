@@ -11,7 +11,7 @@ const SocialLinks = () => {
             href={link.path}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-card p-4 rounded-full text-primary hover:bg-primary hover:text-white transition-colors duration-300"
+            className="bg-card px-4 py-4 rounded-full text-primary hover:bg-primary hover:text-white transition-colors duration-300"
           >
             {link.icon}
           </a>
@@ -22,7 +22,7 @@ const SocialLinks = () => {
         href="https://drive.google.com/uc?export=download&id=1eHGYpSloH8d2whkXpSQxpOtindulKi2k"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-primary w-48 text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-primary-dark transition-colors duration-300"
+        className="bg-primary w-48 text-white px-6 py-3 rounded-full flex items-center gap-3 hover:bg-primary-dark transition-colors duration-300"
       >
         <Download size={20} />
         Download CV
