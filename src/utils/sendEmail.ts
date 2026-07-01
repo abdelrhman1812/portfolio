@@ -26,12 +26,12 @@ export const sendEmail = async ({
 }: SendEmailParams) => {
   setIsLoading(true);
   try {
-    // Send the email using emailjs
+    if (!formRef.current) return;
     await emailjs.sendForm(
       process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
       process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
       formRef.current,
-      process.env.NEXT_PUBLIC_EMAIL_USER_KEY
+      process.env.NEXT_PUBLIC_EMAIL_USER_KEY,
     );
     handleSuccess(formik.resetForm);
   } catch (err) {
